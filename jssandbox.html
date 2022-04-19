@@ -5,6 +5,9 @@
 </head>
 <body>
 
+	<script type="text/javascript">
+		alert("this content contains a virus")
+	</script>
 	<h2>Hello, World</h2>
 	<script type="text/javascript">
 		console.log("Hello, World how are you? We the people need to help make a better world")
@@ -26,5 +29,78 @@
 		console.log(myArray[0]);
 		console.log(myArray[1]);
 		console.log(myArray[2]);
+	</script>
+	<h2>Manipulating Arrays</h2>
+	<script type="text/javascript">
+		var myArray = [true, "We like to enjoy life and have fun."];
+		myArray.push(42);
+		myArray.shift();
+
+		console.log(myArray[0]);
+		console.log(myArray[1]);
+	</script>
+
+	<h2>Operators</h2>
+	<script type="text/javascript">
+		var firstName = "James";
+		var lastName = "Bond";
+		var myAge = 14;
+
+		var fullName = firstName + lastName;
+		var favoriteNumber = myAge / 2;
+
+		console.log("The name is " + firstName +  "..." +  fullName);
+		console.log("My favorite number is " + favoriteNumber);
+	</script>
+
+	<h2>Conditions</h2>
+	<script type="text/javascript">
+		function checkFavoritenumber(Answer)
+	{
+			if (Answer===7)
+		{
+			console.log("correct");
+		}
+		else
+		{
+			console.log("incorrect");
+		}
+	}
+
+checkFavoritenumber(3);
+checkFavoritenumber(7);
+checkFavoritenumber(42);
+	</script>
+
+	<h2>Loops</h2>
+	<script type="text/javascript">
+		var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
+		for (var i = 0; i<myArray.length; i++)
+			{
+				console.log(myArray[i]);
+			}
+	</script>
+	<h2>Objects</h2>
+	<script type="text/javascript">
+		var person= {
+			firstName:"Laith",
+			lastName:"Haddadin"
+		}
+		person.age=99;
+		person.employed=true;
+
+		console.log(person.firstName);
+		console.log(person.lastName);
+		console.log(person.age);
+		console.log(person.employed);
+	</script>
+	<h2>Functions</h2>
+	<script type="text/javascript">
+		var multiplyFive = function (number) {
+			return number * 5;}
+			console.log(multiplyFive(3));
+			console.log(multiplyFive(4));
+			console.log(multiplyFive(5));
+			console.log(multiplyFive(6));
 	</script>
 </body>
